@@ -62,7 +62,7 @@ The Django application will be accessible at http://localhost:8000.
 
 The application is able to pass all the requirements:
 
-## 1.1. Create a Partner
+### 1.1. Create a Partner
 
 You can create a new partner by sending a POST request to the `/partners/` endpoint with the following data format:
 
@@ -86,7 +86,7 @@ You can create a new partner by sending a POST request to the `/partners/` endpo
 }
 ```
 
-## Loading Partners from a JSON File
+#### Loading Partners from a JSON File
 
 You can use the provided [pdvs.json](https://github.com/ab-inbev-ze-company/ze-code-challenges/blob/master/files/pdvs.json) file, which contains hundreds of partner information, to load them all into the database using the following customized command:
 
@@ -94,18 +94,18 @@ You can use the provided [pdvs.json](https://github.com/ab-inbev-ze-company/ze-c
 python manage.py loaddata pdvs.json --serializer PartnerSerializer
 ```
 
-The pdvs.json file is located in the djangoapp/partners/fixtures directory, and the command will automatically recognize it without needing to specify the path.
+The pdvs.json file is located in the `djangoapp/partners/fixtures` directory, and the command will automatically recognize it without needing to specify the path.
 
 Below, you can see an example of how these partners might be represented on a map:
 ![map](https://github.com/ab-inbev-ze-company/ze-code-challenges/blob/master/files/images/pdvs.png)
 
-1.2. [Load partner by id](https://github.com/ab-inbev-ze-company/ze-code-challenges/blob/master/backend.md#12-load-partner-by-id):
+### 1.2. [Load partner by id](https://github.com/ab-inbev-ze-company/ze-code-challenges/blob/master/backend.md#12-load-partner-by-id):
 
 To retrieve a specific partner by its ID, you can send a GET request to the `/partners/{id}/` endpoint, where {id} is the ID of the partner you want to retrieve.
 
 For example, to retrieve the partner with ID 1, you can send a GET request to `localhost:8000/partners/1/`
 
-1.3. [Search partner](https://github.com/ab-inbev-ze-company/ze-code-challenges/blob/master/backend.md#13-search-partner):
+### 1.3. [Search partner](https://github.com/ab-inbev-ze-company/ze-code-challenges/blob/master/backend.md#13-search-partner):
 
 To search for the nearest partner that covers a specific location, you can send a GET request to the `/search/` endpoint with the `lat` and `long` query parameters representing the location's latitude and longitude, respectively.
 
