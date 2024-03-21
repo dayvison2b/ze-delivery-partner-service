@@ -115,7 +115,7 @@ For example, to search for the nearest partner covering the location with latitu
 If a partner is found, the API will return the partner's information. Otherwise, it will return a 404 status code with the message "No partner found for the given location."
 
 - In the admin interface `http://localhost:8000/admin/`, you can visualize the address and coverage area of each partner, displayed using GeoJSON, allowing for easy map viewing.
-![Partner map](files/images/image.png)
+![Partner map](files/images/partner_map.png)
 
 ## Additional Notes
 
