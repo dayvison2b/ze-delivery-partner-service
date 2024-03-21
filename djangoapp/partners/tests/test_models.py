@@ -41,7 +41,7 @@ class PartnerModelTests(TestCase):
         }
 
         # Convert data to JSON serializable format
-        new_partner_json = json.dumps(new_partner)
+        # new_partner_json = json.dumps(new_partner)
 
         # Pass data through the serializer
         serializer = PartnerSerializer(data=new_partner)
