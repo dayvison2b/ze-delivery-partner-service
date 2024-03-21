@@ -62,7 +62,7 @@ The Django application will be accessible at http://localhost:8000.
 
 The application is able to pass all the requirements:
 
-### 1.1. Create a Partner
+### 1.1. [Create a Partner](https://github.com/ab-inbev-ze-company/ze-code-challenges/blob/master/backend.md#11-create-a-partner):
 
 You can create a new partner by sending a POST request to the `/partners/` endpoint with the following data format:
 
@@ -113,6 +113,9 @@ For example, to search for the nearest partner covering the location with latitu
 `localhost:8000/search/?lat=-21.785741&long=-46.57421`
 
 If a partner is found, the API will return the partner's information. Otherwise, it will return a 404 status code with the message "No partner found for the given location."
+
+- In the admin interface `http://localhost:8000/admin/`, you can visualize the address and coverage area of each partner, displayed using GeoJSON, allowing for easy map viewing.
+![Partner map](files/images/image.png)
 
 ## Additional Notes
 
