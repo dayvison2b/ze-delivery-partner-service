@@ -1,4 +1,4 @@
-ZE_DELIVERY_2
+ze-delivery-partner-service
  ┣ djangoapp
  ┃  ┣ partners
  ┃  ┃  ┣ fixtures
