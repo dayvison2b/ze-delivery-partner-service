@@ -1,8 +1,6 @@
 # Django GeoJSON Partner Service
 
-This project is a Django application developed for the Ze-delivery backend challenge. It provides a service that manages partners, allowing the creation, retrieval by ID, and searching for the nearest partner based on a given location. The service is built using Django, Docker, and PostgreSQL, making it easy to deploy and ensuring consistency across different environments.
-
-- [Ze-delivery](https://github.com/ab-inbev-ze-company/ze-code-challenges/blob/master/backend.md#backend-challenge)
+This project is a Django application developed for the [Ze-delivery backend challenge](https://github.com/ab-inbev-ze-company/ze-code-challenges/blob/master/backend.md#backend-challenge). It provides a service that manages partners, allowing the creation, retrieval by ID, and searching for the nearest partner based on a given location. The service is built using Django, Docker, and PostgreSQL, making it easy to deploy and ensuring consistency across different environments.
 
 ## Features
 
